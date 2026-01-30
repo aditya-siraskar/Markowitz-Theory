@@ -1,5 +1,6 @@
-# Markowitz-Theory
-## 📈 Markowitz Portfolio Optimization & Backtesting Engine
+# 📈 Markowitz Portfolio Optimization & Backtesting Engine
+
+### M.Tech Data Science Project | Quantitative Finance
 
 This project implements **Modern Portfolio Theory (MPT)** from scratch in Python. It builds a complete pipeline to download financial data, simulate thousands of portfolio combinations, mathematically solve for the **Efficient Frontier**, and rigorously **backtest** the results against a naive benchmark.
 
