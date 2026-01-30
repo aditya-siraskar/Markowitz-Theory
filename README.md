@@ -27,7 +27,7 @@ Before optimization, we analyze the relationships between assets. The model reli
 ### Step 2: The Monte Carlo Simulation
 Instead of solving the equation immediately, we use a "Brute Force" approach, generating 5,000 random portfolios to visualize the trade-off between Risk and Return.
 
-![Monte Carlo Simulation](graphs/markowitz_mc_sim.jpg)
+![Monte Carlo Simulation](graphs/markowitz_mc_sim.png)
 * **The "Cloud":** Represents the universe of possible portfolios.
 * **The Sharpe Ratio:** The color gradient represents the Risk-Adjusted Return.
 * **The Stars:**
@@ -37,7 +37,7 @@ Instead of solving the equation immediately, we use a "Brute Force" approach, ge
 ### Step 3: Mathematical Optimization (SLSQP)
 We move from "guessing" to "solving" using **Convex Optimization** (`scipy.optimize`). We minimize portfolio variance for a range of target returns to draw the exact Efficient Frontier.
 
-![The Efficient Frontier](graphs/efficient_frontier.jpg)
+![The Efficient Frontier](graphs/efficient_frontier.png)
 * **The White Dashed Line:** This is the theoretical limit. Notice how it traces the upper-left edge of our simulation cloud perfectly. It is mathematically impossible to find a portfolio *above* this line using these specific assets.
 
 ---
